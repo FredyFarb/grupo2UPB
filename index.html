@@ -8,24 +8,31 @@
   <title>Document</title>
 </head>
 <body>
-  <nav id="landing_navbar">
-    <img src="imagenes/marketplace.png" alt="" id="navbar_logo">
-    <a href="registro.html" target="_blank" id="link_registro">
-    <button type="button" name="registro" id="btn_irRegistro">Registro</button>
-  </nav>
-  <div class="">
-  <h1>Descripción de la página</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
-  </div>
-  <div>
-    <img src="imagenes/marketplace.png" height="10%">
-    <h3>Sample Text</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illum culpa aspernatur, consequatur non quaerat, excepturi, doloribus dolorum dolor inventore provident error accusamus illo earum. Nemo dolorem nobis deleniti eius.</p>
-  </div>
-  <div>
-    <img src="imagenes/marketplace.png" height="10%">
-    <h3>Sample Text</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illum culpa aspernatur, consequatur non quaerat, excepturi, doloribus dolorum dolor inventore provident error accusamus illo earum. Nemo dolorem nobis deleniti eius.</p>
+  <div class="index-container">
+    <nav class="navbar" id="landing_navbar">
+      <img class="navbar__logo" src="imagenes/marketplace.png" alt="" id="navbar_logo">
+      <button class="navbar__register-button" type="button" name="registro" id="btn_irRegistro">
+        <a class="navbar__register-link" href="registro.html" target="_self" id="link_registro">Registro</a>
+      </button>
+    </nav>
+    <main class="content">
+      <div class="title">
+        <h1 class="title__main-title">Descripción de la página</h1>
+        <p class="title__sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+      </div>
+      <div class="description">
+        <div class="card">
+          <img class="card__image" src="imagenes/marketplace.png" height="10%">
+          <h3 class="card__title">Sample Text</h3>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illum culpa aspernatur, consequatur non quaerat, excepturi, doloribus dolorum dolor inventore provident error accusamus illo earum. Nemo dolorem nobis deleniti eius.</p>
+        </div>
+        <div class="card">
+          <img class="card__image" src="imagenes/marketplace.png" height="10%">
+          <h3 class="card__title">Sample Text</h3>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illum culpa aspernatur, consequatur non quaerat, excepturi, doloribus dolorum dolor inventore provident error accusamus illo earum. Nemo dolorem nobis deleniti eius.</p>
+        </div>
+      </div>
+    </main>
   </div>
 </body>
 </html>
