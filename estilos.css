@@ -119,3 +119,60 @@
 	margin-top: 1rem;
 	width: 80%;
 }
+form{
+    background: whitesmoke;
+    width :50%;
+    padding:10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px white;
+    
+}
+.form{
+	padding-bottom: 12px;
+	padding-top: 12px;
+}
+form.group{
+    position:relative;
+    margin: 40px 40px;
+
+}
+form input{
+    background: white;
+    color:rgb(57, 59, 94);
+    font-size: 18px;
+    display: block;
+    width: 70%;
+    align-self: auto;
+    border: none;
+    border-bottom: 1px solid var(black);
+    resize: none;
+	
+
+}
+body.formulario{
+	box-sizing: border-box;
+	width: 50%;
+    height: 400px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 12px;
+	
+	
+}
+#btn_enviar_registro{
+	width: 30%;
+	
+	padding: .6rem 1rem;
+	align-content: center;
+    border: 1px solid #095399;
+    border-radius: 4px;
+    background-color: #097891;
+    color: #fff;
+  
+    font-size: 1rem;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,
+      0 1px 3px rgba(0,0,0,.2);
+    
+}
