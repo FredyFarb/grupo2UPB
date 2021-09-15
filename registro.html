@@ -8,27 +8,59 @@
   <title>Registro</title>
 </head>
 <body>
-  <div class="register-container">
-    <main class="content">
-      <div class="title content__title">
-        <h1 class="title__main-title">Regístrate</h1>
-      </div>
-      <form class="form content__form" id = "form_registro_usuario">
-        <div class="entry form__entry">
-          <label class="entry__label" for="in_usuario">
-            <span class="entry__text">Usuario:</span>
-            <input class="entry__input" type="text" id="in_usuario" placeholder="Ingresa tu usuario"/>
-          </label>
+  <header class=form_titulo>
+    <h1>Formulario de registro</h1>
+  </header>
+  <nav class="navbar" id="landing_navbar">
+    <img class="navbar__logo" src="imagenes/marketplace.png" alt="" id="navbar_logo">
+  </nav>
+  <main class="form-container">
+    <form class="formulario"  id="form_registro_usuario" method="POST" action="">
+      <fieldset class="form_section">
+        <div class="field_nombre">
+          <label for="nombre">Nombre:</label>
+          <input id="in_nombre" type="text" name="nombre"/>
         </div>
-        <div class="entry form__entry">
-          <label class="entry__label" for="in_contrasena">
-            <span class="entry__text">Contrase&ntilde;a:</span>
-            <input class="entry__input" type="password" id = "in_contrasena" placeholder="Ingresa tu contraseña"/>
-          </label>
+        <div class="field_cedula">
+          <label for="cedula">Cédula:</label>
+          <input id="in_cedula" type="number" min="0" step="1" name="Cedula"/>
         </div>
-        <button class="form__button" type="submit" id="btn_enviar_registro">Enviar</button>
-      </form>
-    </main>
-  </div>
+        <div class="field_fecha">
+          <label for="fecha">Fecha:</label>
+          <input id="in_fecha" type="date" name="fecha"/>
+        </div>
+        <div class="radio_button_genero">
+          <label for="genero">Género:</label>
+          <input id="in_genero" type="radio" name="genero" value="1"/>Masculino
+          <input id="in_genero" type="radio" name="genero" value="2"/>Femenino
+        </div>
+        <div class="field_direccion">
+          <label for="direccion">Dirección:</label>
+          <input id="in_direccion" type="text" name="direccion"/>
+        </div>
+        <div class="field_email">
+          <label for="email">Email:</label>
+          <input id="in_email" type="email" name="email"/>
+        </div>
+
+        <div class="field_telefono">
+          <label for="telefono">Teléfono:</label>
+          <input id="in_telefono" type="number" min="1000000" step="1" name="telefono"/>
+        </div>
+        <div class="field_usuario">
+          <label for="usuario">Usuario:</label>
+          <input id="in_usuario" type="text" name="usuario"/>
+        </div>
+        <div class="field_contrasena">
+          <label for="contrasena">Contraseña:</label>
+          <input id="in_contrasena" type="password" name="contrasena"/>
+        </div>
+      </fieldset>
+      <fieldset class="buttons_form">
+          <input type="submit" name="enviar" value="Enviar"> 
+          <input type="reset" name="resetiar" value="resetiar"/>
+      </fieldset>
+    </form>
+  </main>
 </body>
 </html>
