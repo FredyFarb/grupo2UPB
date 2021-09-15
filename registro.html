@@ -8,8 +8,27 @@
   <title>Document</title>
 </head>
 <body>
-  aquí va el formulario
-
-
+  <div class="register-container">
+    <main class="content">
+      <div class="title content__title">
+        <h1 class="title__main-title">Regístrate</h1>
+      </div>
+      <form class="form content__form" id = "form_registro_usuario">
+        <div class="entry form__entry">
+          <label class="entry__label" for="in_usuario">
+            <span class="entry__text">Usuario:</span>
+            <input class="entry__input" type="text" id="in_usuario" placeholder="Ingresa tu usuario"/>
+          </label>
+        </div>
+        <div class="entry form__entry">
+          <label class="entry__label" for="in_contrasena">
+            <span class="entry__text">Contrase&ntilde;a:</span>
+            <input class="entry__input" type="password" id = "in_contrasena" placeholder="Ingresa tu contraseña"/>
+          </label>
+        </div>
+        <button class="form__button" type="submit" id="btn_enviar_registro">Enviar</button>
+      </form>
+    </main>
+  </div>
 </body>
 </html>

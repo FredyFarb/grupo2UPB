@@ -80,6 +80,7 @@
 
 .title__main-title{
 	font-size: 3rem;
+	color: #3F80EA;
 }
 
 .title__sub-title{
@@ -118,4 +119,80 @@
 	text-align: center;
 	margin-top: 1rem;
 	width: 80%;
+}
+
+.register-container{
+	font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url("https://images.alphacoders.com/597/597903.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content__form{
+	width: 320px;
+	margin-top: 2rem;
+}
+
+.form{
+	border: 1px solid black;
+	border-radius: 1rem;
+	padding: 3rem 2rem;
+	background: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form__entry{
+	width: 80%;
+	margin-top: 2rem;
+	
+}
+
+.entry{
+	display: flex;
+	flex-direction: column;
+}
+
+.entry__text{
+	display: block;
+	font-weight: bold;
+	color: #293042;
+}
+
+.entry__input{
+	width: 100%;
+	margin-top: .5rem;
+	height: 2rem;
+	font-size: .9rem;
+	color:gray;
+	border: none;
+	border-bottom: 1px solid #293042;
+	outline: none;
+	background: whitesmoke
+}
+
+.form__button{
+	width: 80%;
+	margin-top: 2.5rem;
+	height: 2rem;
+	border: none;
+	border-radius: 5px;
+	background-color: #3F80EA;
+	border-color: #3F80EA;	
+	color: white;
+}
+
+.form__button:hover{
+	background-color: #0A6CFF;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.form__button:active{
+	background-color: #1E97CA;
 }
