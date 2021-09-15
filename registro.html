@@ -5,20 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="estilos.css">
-  <title>Document</title>
+  <title>Registro</title>
 </head>
-<body class = "formulario">
-  
-  <form id = "form_registro_usuario">
-    <h1>Formulario</h1>
-    <br>
-    <div class ="group">
-      <label>Usuario</label>
-      <input type="text" id = "in_usuario"/>
-      <label>Contrase&ntilde;a</label>
-      <input type="text" id = "in_contrasena"/>
-      <button class="navbar__register-button" type="submit" id="btn_enviar_registro">Enviar</button>
-    </div>
-  </form>
+<body>
+  <div class="register-container">
+    <main class="content">
+      <div class="title content__title">
+        <h1 class="title__main-title">Regístrate</h1>
+      </div>
+      <form class="form content__form" id = "form_registro_usuario">
+        <div class="entry form__entry">
+          <label class="entry__label" for="in_usuario">
+            <span class="entry__text">Usuario:</span>
+            <input class="entry__input" type="text" id="in_usuario" placeholder="Ingresa tu usuario"/>
+          </label>
+        </div>
+        <div class="entry form__entry">
+          <label class="entry__label" for="in_contrasena">
+            <span class="entry__text">Contrase&ntilde;a:</span>
+            <input class="entry__input" type="password" id = "in_contrasena" placeholder="Ingresa tu contraseña"/>
+          </label>
+        </div>
+        <button class="form__button" type="submit" id="btn_enviar_registro">Enviar</button>
+      </form>
+    </main>
+  </div>
 </body>
 </html>
