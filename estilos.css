@@ -136,7 +136,23 @@
 	width: 320px;
 	margin-top: 2rem;
 }
-
+#navbar_logo{
+	background-color: white;
+}
+#navbar_logo{
+	width: 100px;
+	height: 120px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#titulo_form{
+	text-align: center;
+	display: block;
+	
+}
 .form{
 	border: 1px solid black;
 	border-radius: 1rem;
@@ -145,8 +161,16 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
+	
 
+}
+.form_section{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
 .form__entry{
 	width: 80%;
 	margin-top: 2rem;
