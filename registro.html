@@ -8,7 +8,7 @@
   
   <title>Registro</title>
 </head>
-<body>
+<body class="registro-body">
   <header class=form_titulo>
     <h1 id = "titulo_form">Formulario de registro</h1>
   </header>
@@ -32,8 +32,8 @@
         </div>
         <div class="radio_button_genero">
           <label for="genero">Género:</label>
-          <input id="in_genero" type="radio" name="genero" value="1"/>Masculino
-          <input id="in_genero" type="radio" name="genero" value="2"/>Femenino
+          <input id="in_genero" type="radio" name="genero" value="1" checked/><label>Masculino</label>
+          <input id="in_genero" type="radio" name="genero" value="2"/><label>Femenino</label>
         </div>
         <div class="field_direccion">
           <label for="direccion">Dirección:</label>
@@ -58,8 +58,8 @@
         </div>
       </fieldset>
       <fieldset class="buttons_form" >
-          <input id="btn_enviar_registro" type="submit" name="enviar" value="Enviar"> 
-          <input type="reset" name="resetiar" value="resetiar"/>
+          <input class = "botones" id="btn_enviar_registro" type="submit" name="enviar" value="Enviar"> 
+          <input class = "botones" type="reset" name="resetiar" value="resetiar"/>
       </fieldset>
     </form>
   </main>

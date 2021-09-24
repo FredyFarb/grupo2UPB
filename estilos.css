@@ -220,3 +220,85 @@
 .form__button:active{
 	background-color: #1E97CA;
 }
+
+.form-container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#form_registro_usuario input[type="text"], #form_registro_usuario 
+input[type="mumber"], #form_registro_usuario 
+input[type="date"], #form_registro_usuario 
+input[type="email"], #form_registro_usuario 
+textarea, #form_registro_usuario button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#form_registro_usuario {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+label {
+	margin:5px 0 5px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 5px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+.botones {
+	cursor:pointer;
+	width:80%;
+	border:none;
+	background:rgb(0, 145, 255);
+	color:#FFF;
+	margin:0 0 5px;
+	padding:5px;
+	font-size:15px;
+	
+}
+.buttons_form{
+	text-align: center;
+}
+
+#in_nombre, #in_cedula, #in_fecha, #in_genero, #in_direccion, #in_email, #in_telefono, #in_usuario, #in_contrasena{
+
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+label{
+	text-align: left;
+	color:rgb(126, 122, 122);
+	
+}
+
+.radio_button_genero{
+	
+	display: flex;
+	padding-top: 15px;
+	padding-bottom: 20px;
+  	align-items: flex-end;
+  	padding: 10px 10px;
+  	margin: 3px 0;
+
+  	
+
+  
+}
+
+#in_genero{
+	
+	display: flex;
+	
+}
