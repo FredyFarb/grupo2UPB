@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="estilos.css">
-  <title>Proyecto</title>
-</head>
-<body>
-  <div class="index-container">
-    <nav class="navbar index-container__navbar" id="landing_navbar">
-      <img class="navbar__logo" src="imagenes/marketplace.png" alt="" id="navbar_logo">
-      <button class="navbar__register-button" type="button" name="registro" id="btn_irRegistro">
-        <a class="navbar__register-link" href="registro.html" target="_self" id="link_registro">Registro</a>
-      </button>
-    </nav>
-    <main class="content">
-      <div class="title content__title">
-        <h1 class="title__main-title">Descripción de la página</h1>
-        <p class="title__sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="estilos.css">
+      <title>Quantumleap Digital</title>
+      <link rel="shortcut icon" href="imagenes/logo.PNG" />
+      <script type="text/javascript" src="validaciones.js"></script>
+  </head>
+
+  <body>
+    
+    <div class="container">
+      <input type="checkbox" class="checkbox" id = "check">
+      <label class="menu-oculto" for="check"> ||| </label>
+      
+      <div class="header-index">
+          <h1>Quantumleap Digital</h1>
+          <p>Transformación digital para pequeñas y medianas empresas mediate desarrollo de software a la medida</p>
       </div>
-      <div class="description content__description">
-        <div class="card">
-          <img class="card__image" src="imagenes/marketplace.png" height="10%">
-          <h3 class="card__title">Sample Text</h3>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illum culpa aspernatur, consequatur non quaerat, excepturi, doloribus dolorum dolor inventore provident error accusamus illo earum. Nemo dolorem nobis deleniti eius.</p>
-        </div>
-        <div class="card">
-          <img class="card__image" src="imagenes/marketplace.png" height="10%">
-          <h3 class="card__title">Sample Text</h3>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illum culpa aspernatur, consequatur non quaerat, excepturi, doloribus dolorum dolor inventore provident error accusamus illo earum. Nemo dolorem nobis deleniti eius.</p>
-        </div>
+      
+      <div class="navi">          
+          <nav id ="landing_navbar">
+            <img id = "navbar_logo" src="/imagenes/logo.PNG">
+            <button id="btn_irRegistro">
+              <a id="link_registro" href="registro.html">Registro </a>
+            </button>
+          </nav>
       </div>
-    </main>
+      
+      <div class="content">
+         
+
+              <div class ="card">
+                      <img class= "img-card" src="/imagenes/card-left-servicio.png">
+                      <h2>Nuestro Servicio</h2>
+                      <p>Asesoramos e impulsamos la sistematización de sus procesos, ofrecemos mejoras accesibles para todos</p>
+              </div>
+        
+              <div class ="card">
+                      <img class= "img-card" src="/imagenes/card-center-software.png">
+                      <h2>software a la medida</h2>
+                      <p>Desarrollamos software a la medida para impatar en el mercado</p>
+              </div>
+             
+             <div class ="card">
+                      <img class= "img-card" src="/imagenes/card-right-analisis.png">
+                      <h2>An&aacute;lisis de datos</h2>
+                      <p>Desarrollamos software a la medida para impatar en el mercado</p>
+             </div>
+             
+    </div>
   </div>
-</body>
+      
+  
+  </body>
 </html>

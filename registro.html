@@ -1,67 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="estilos.css">
-  
-  <title>Registro</title>
-</head>
-<body class="registro-body">
-  <header class=form_titulo>
-    <h1 id = "titulo_form">Formulario de registro</h1>
-  </header>
-  <nav id="landing_navbar">
-    <img class="navbar__logo" src="imagenes/marketplace.png" alt="" id="navbar_logo">
-  </nav>
-  <main class="form-container">
-    <form class="formulario"  id="form_registro_usuario" method="POST" action="">
-      <fieldset class="form_section">
-        <div class="field_nombre">
-          <label for="nombre">Nombre:</label>
-          <input id="in_nombre" type="text" name="nombre"/>
-        </div>
-        <div class="field_cedula">
-          <label for="cedula">Cédula:</label>
-          <input id="in_cedula" type="number" min="0" step="1" name="Cedula"/>
-        </div>
-        <div class="field_fecha">
-          <label for="fecha">Fecha:</label>
-          <input id="in_fecha" type="date" name="fecha"/>
-        </div>
-        <div class="radio_button_genero">
-          <label for="genero">Género:</label>
-          <input id="in_genero" type="radio" name="genero" value="1" checked/><label>Masculino</label>
-          <input id="in_genero" type="radio" name="genero" value="2"/><label>Femenino</label>
-        </div>
-        <div class="field_direccion">
-          <label for="direccion">Dirección:</label>
-          <input id="in_direccion" type="text" name="direccion"/>
-        </div>
-        <div class="field_email">
-          <label for="email">Email:</label>
-          <input id="in_email" type="email" name="email"/>
-        </div>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="estilos.css">
+      <link rel="shortcut icon" href="imagenes/logo.PNG" />
+      <script type="text/javascript" src="validaciones.js"></script>
+      <title>Registro</title>
+  </head>
 
-        <div class="field_telefono">
-          <label for="telefono">Teléfono:</label>
-          <input id="in_telefono" type="number" min="1000000" step="1" name="telefono"/>
-        </div>
-        <div class="field_usuario">
-          <label for="usuario">Usuario:</label>
-          <input id="in_usuario" type="text" name="usuario"/>
-        </div>
-        <div class="field_contrasena">
-          <label for="contrasena">Contraseña:</label>
-          <input id="in_contrasena" type="password" name="contrasena"/>
-        </div>
-      </fieldset>
-      <fieldset class="buttons_form" >
-          <input class = "botones" id="btn_enviar_registro" type="submit" name="enviar" value="Enviar"> 
-          <input class = "botones" type="reset" name="resetiar" value="resetiar"/>
-      </fieldset>
-    </form>
-  </main>
-</body>
+  <body class="body-registro">
+
+     <header class="header-registro">
+          <h1>Registro</h1>
+     </header>
+     <div class="container-form">
+          <form id = "form_registro_usuario">
+                <img id = "navbar_logo" src="/imagenes/logo.PNG" style="width: 40%;"/>
+                <input type="text" id="in_usuario" placeholder="Usuario" name="usuario"/>
+                <br>
+                <input type="password" id="in_contrasena" placeholder="Contrase&nacute;a" name="contrasena"/>
+                <br>
+                <input  type="button" id="btn_enviar_registro" onclick="validar_datos('in_usuario', 'in_contrasena');" value="Enviar"/>
+          
+          </form>
+       </div>
+  </body>
+
 </html>

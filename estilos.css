@@ -1,304 +1,461 @@
-*{
-	margin: 0;	
-	padding: 0;
-	box-sizing: border-box;
+
+
+.container {
+	display: grid;
+	grid-template-columns: 14em auto;
+	grid-template-rows: auto 23.5em;
+	gap: 0em 0em;
+	grid-auto-flow: row;
+	grid-template-areas:
+	  "navi header-index"
+	  "navi content";
+	text-align: center;
+  }
+
+.header-index { 
+	  grid-area: header-index; 
+	  text-align: center;
+	  font-size: 1.5625em;
+	  margin-bottom:2.5em;
+	  margin-left: 1.25em;
+	  margin-left: 1.25em;
+
+	}
+.header-index p {
+	font-size: 0.8em;
+}
+.header-index h1{
+	font-size:45px;
 }
 
-.index-container{
-	display: flex;
-	font-family: Arial, Helvetica, sans-serif;
+.navi {
+	   grid-area: navi; 
+	  background: white;  
+	   background: -webkit-linear-gradient(to bottom, white, #e5fcdd);  
+       background: linear-gradient(to bottom, #f8f8f8, #a8ff78);
+	   width: 100%;
+	   height: auto;
+	   box-shadow: 0px 0px 0px 2px   rgb(107, 184, 126);
+	   position: relative;
+	}
+.checkbox{
+	display:none;
+	
 }
-
-.index-container__navbar{
-	width: 25%;
-	min-width: 200px;
-	max-width: 400px;
-	height: 100vh;
-	position: sticky;
-	top: 0;
-	bottom: 0;
-}
-
-.navbar{
-	padding: 2rem; 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	background-color: #293042;
-}
-
-.navbar__logo{
-	width: 90%;
-} 
-
-.navbar__register-button{
-	width: 80%;
-	height: 2rem;
-	position: relative;
-	border: none;
-	border-radius: 5px;
-	background-color: #3F80EA;
-	border-color: #3F80EA;
-}
-
-.navbar__register-link{
+.menu-oculto{
+	background-color:#3fba49;
+	border-radius: 3px;
+	font-size: 1.5625em;
+	padding-bottom: 5px;
 	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-	color: white;
+	left:1px;
+	display: none;
 }
-
-.navbar__register-link:hover{
-	background-color: #0A6CFF;
-	border-radius: 5px;
-
+.menu-oculto:hover{
+	background-color: #2f5a28c2;
 }
-
-.navbar__register-link:active{
-	background-color: #1E97CA;
+#landing_navbar{
+	width:100%;
+	height:100%;
 }
-
-.content{
-	padding: 2rem;
+.content { 
+	  grid-area: content;
+	  display: flex;
+	  margin-left: 30px;
+	  margin-right: 30px;
+	  justify-content: center;
+	  flex-wrap: wrap;
+	  align-items: center;
+	}
+	
+body{
+	font-family: 'Heebo', sans-serif;
+	letter-spacing: 0.03em;
+	background-color:rgb(255, 255, 255);
+	margin:0;
 }
-
-.content__title{
-	width: 90%;
-	margin: auto;
-}
-
-.title{
-	text-align: center;
-}
-
-.title__main-title{
-	font-size: 3rem;
-	color: #3F80EA;
-}
-
-.title__sub-title{
-	margin-top: 1rem;
-	font-size: 1.3rem;
-}
-
-.content__description{
-	width: 80%;
-	margin: auto;
-	margin-top: 2rem;
-}
-
-.description{
-	display: flex;
-}
-
 .card{
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.card__image{
-	width: 100px;
-	height: 100px;
-}
-
-.card__title{
-	text-align: center;
-	margin-top: 1rem;
-}
-
-.card__description{
-	text-align: center;
-	margin-top: 1rem;
-	width: 80%;
-}
-
-.register-container{
-	font-family: Arial, Helvetica, sans-serif;
-	background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url("./imagenes/BikeWallpaper.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.content__form{
-	width: 320px;
-	margin-top: 2rem;
-}
-#navbar_logo{
-	background-color: white;
-}
-#navbar_logo{
-	width: 100px;
-	height: 120px;
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-#titulo_form{
-	text-align: center;
-	display: block;
-	
-}
-.form{
-	border: 1px solid black;
-	border-radius: 1rem;
-	padding: 3rem 2rem;
-	background: whitesmoke;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
-
-}
-.form_section{
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	text-align: center;
-}
-.form__entry{
-	width: 80%;
-	margin-top: 2rem;
-	
-}
-
-.entry{
-	display: flex;
-	flex-direction: column;
-}
-
-.entry__text{
-	display: block;
-	font-weight: bold;
-	color: #293042;
-}
-
-.entry__input{
+	box-shadow: 2px 2px 2px 2px rgba(102, 181, 122, 0.611);
+	max-width: 330px;
 	width: 100%;
-	margin-top: .5rem;
-	height: 2rem;
-	font-size: .9rem;
-	color:gray;
-	border: none;
-	border-bottom: 1px solid #293042;
-	outline: none;
-	background: whitesmoke
-}
-
-.form__button{
-	width: 80%;
-	margin-top: 2.5rem;
-	height: 2rem;
-	border: none;
+	height: 90%;
 	border-radius: 5px;
-	background-color: #3F80EA;
-	border-color: #3F80EA;	
-	color: white;
-}
-
-.form__button:hover{
-	background-color: #0A6CFF;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-.form__button:active{
-	background-color: #1E97CA;
-}
-
-.form-container {
-	max-width:400px;
-	width:100%;
-	margin:0 auto;
-	position:relative;
-}
-
-#form_registro_usuario input[type="text"], #form_registro_usuario 
-input[type="mumber"], #form_registro_usuario 
-input[type="date"], #form_registro_usuario 
-input[type="email"], #form_registro_usuario 
-textarea, #form_registro_usuario button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
-
-#form_registro_usuario {
-	background:#F9F9F9;
-	padding:25px;
-	margin:50px 0;
-}
-
-label {
-	margin:5px 0 5px;
-	display:block;
-	font-size:13px;
-}
-
-fieldset {
-	border: medium none !important;
-	margin: 0 0 5px;
-	min-width: 100%;
-	padding: 0;
-	width: 100%;
-}
-.botones {
-	cursor:pointer;
-	width:80%;
-	border:none;
-	background:rgb(0, 145, 255);
-	color:#FFF;
-	margin:0 0 5px;
-	padding:5px;
-	font-size:15px;
 	
 }
-.buttons_form{
-	text-align: center;
-}
-
-#in_nombre, #in_cedula, #in_fecha, #in_genero, #in_direccion, #in_email, #in_telefono, #in_usuario, #in_contrasena{
-
-	width:100%;
-	border:1px solid #CCC;
-	background:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-}
-
-label{
-	text-align: left;
-	color:rgb(126, 122, 122);
+.card:hover{
 	
+    background-color: #7dce709f;
 }
-
-.radio_button_genero{
-	
-	display: flex;
-	padding-top: 15px;
-	padding-bottom: 20px;
-  	align-items: flex-end;
-  	padding: 10px 10px;
-  	margin: 3px 0;
-
-  	
+.card p{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size:14px;
+}
 
   
+#btn_irRegistro{
+	position: absolute;
+	left:28%;
+	top:90%;
+	text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 1.25em;
+    color: #ffffff;
+    background-color: #2dba09;
+    border: 2px solid #3fba49;
+}
+#btn_irRegistro:hover{
+    color: #000000;
+    background-color: #4da941;
+  }
+#navbar_logo{
+	  padding-top: 15px;
+	  width:60%;
+  }
+
+.img-card{
+	height: 8em;
+	padding-top: 2.5em;
 }
 
-#in_genero{
+
+
+#link_registro{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.body-registro{
+	background: #11998e;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	
-	display: flex;
+}
+.header-registro h1{
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	color: whitesmoke;
+	font: size 0.875em;
+	
+}
+#form_registro_usuario{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;	
+	box-shadow: 5px 5px 5px 5px   rgb(255, 255, 255);
+	background-color:white;
+	border-radius: 5px;
+}
+
+.container-form{
+	width: 20%;
+  	margin: 1em auto;
+  	font-size: 1em;
+}
+#form_registro_usuario input[type=text],[type=password]{
+	padding-top: 6px;
+	padding-bottom: 6px;
+	width: 90%;
+	margin-top: 20px;
+	background-color:whitesmoke;
+	border-style: solid ;
+	border-color:rgb(177, 176, 176);
+	
+}
+#form_registro_usuario input[type=text]:hover,[type=password]:hover{
+	background-color: #c7fdba;
+}
+
+#btn_enviar_registro{
+	margin-top: 20px;
+	width:92%;
+	height:1.875em;
+	font-size:1.125em;
+    color: #ffffff;
+    background-color: #2dba09;
+    border: 2px solid #3fba49;
+}
+#btn_enviar_registro:hover{
+	color: #f7f7f7;
+    background-color: #4da941;
+}
+
+
+
+@media(max-width: 1280px){
+	.container{
+		grid-template-columns: 12em auto;
+		grid-template-rows: auto 23em;
+	}
+	#btn_irRegistro{
+		position: absolute;
+		left:28%;
+		top:90%;
+		text-decoration: none;
+		padding: 3px;
+		font-size: 1em;
+	}
+	.header-index p {
+		font-size: 0.7em;
+	}
+	.header-index h1{
+		font-size:30px;
+	}
+	.navi{
+		height: 90%;
+	}
+	.card{
+		height:75%;
+	}
+	.card p{
+		font-size:12px;
+	}
+	.card h2{
+		font-size:20px;
+	}
+	.img-card{
+		height: 6em;
+		padding-top: 2.5em;
+	}
+	.container-form{
+		width: 20%;
+	}
+}
+
+
+@media(max-width: 950px){
+	.container{
+		grid-template-columns: 8em auto;
+		grid-template-rows: auto 20em;
+	}
+	#btn_irRegistro{
+		position: absolute;
+		left:28%;
+		top:90%;
+		text-decoration: none;
+		padding: 2px;
+		font-size: 0.8em;
+	}
+	.header-index{
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+	.header-index p {
+		font-size: 0.5em;
+	}
+	.header-index h1{
+		font-size:25px;
+		
+	}
+	.navi{
+		height: 85%;
+	}
+	.card{
+		height:65%;
+	}
+	.card p{
+		font-size:9px;
+	}
+	.card h2{
+		font-size:17px;
+	}
+	.img-card{
+		height: 4em;
+		padding-top: 2em;
+	}
+	.container-form{
+		width: 25%;
+	}
+}
+
+@media(max-width: 700px){
+	.container{
+		grid-template-columns: 11.25em auto;
+		grid-template-rows: auto auto;
+		grid-template-areas:
+	  	"navi header-index" 
+		"navi header-index"
+	  	"content";
+	}
+	#btn_irRegistro{
+		position: absolute;
+		left:38%;
+		top:90%;
+		text-decoration: none;
+		padding: 2px;
+		font-size: 0.8em;
+	}
+	
+	.header-index p {
+		font-size: 0.5em;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.header-index h1{
+		font-size:25px;
+		
+	}
+	.navi{
+		height: auto;
+	}
+	.content{
+		display: block;
+		height: max-content;
+		margin-left: 3em;
+		padding-bottom: 3.125em;
+	
+	}
+	.card{
+		height:max-content;
+		padding-bottom: 2px;
+		width:auto;
+		max-width: 60%;
+		margin-left:auto;
+		margin-right:auto;
+		
+	}
+	.card p{
+		font-size:10px;
+	}
+	.card h2{
+		font-size:12px;
+	}
+	.img-card{
+		height: 3.5em;
+		padding-top: 0.6em;
+	}
+	.container-form{
+		width: 30%;
+	}
+	
+	.menu-oculto{
+		display: flex;
+		left: 180px;
+		top: 50%;
+		transition: letf 0.7s;
+	}
+	.navi{
+		transition:0.5s;
+	}
+	.checkbox:checked ~ .header-index{
+		
+		margin-left: -170px;
+	}
+	.checkbox:checked ~ .content{
+		
+		margin-left: -100px;
+	}
+	.checkbox:checked ~ .content .card{
+		
+		max-width: 50%;
+	}
+	
+	.checkbox:checked ~ .menu-oculto{
+		left: 0px;
+		
+	}
+	.checkbox:checked ~ .navi{
+		display: none;
+	}
+}
+
+@media(max-width: 540px){
+	.container{
+		grid-template-columns: 164px auto;
+		grid-template-rows: auto auto;
+		grid-template-areas:
+	  	"navi header-index" 
+		"navi header-index"
+	  	"content";
+	}
+	#btn_irRegistro{
+		position: absolute;
+		left:22%;
+		top:93%;
+		text-decoration: none;
+		padding: 2px;
+		font-size: 0.8em;
+	}
+	.header-index{
+		padding-bottom: 35px;
+	}
+	.header-index p {
+		font-size: 0.6em;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.header-index h1{
+		font-size:1.25rem;
+		
+	}
+	.navi{
+		height: auto;
+	}
+	#landing_navbar{
+		transition: 0.5s;
+	}
+	#navbar_logo{
+		padding-top: 60px;
+	}
+	.content{
+		display: block;
+		height: max-content;
+		margin-left: 1.5em;
+		padding-bottom: 1em;
+	}
+	.card{
+		height: 10.625em;
+		padding-bottom: 2px;
+		width:auto;
+		max-width: 90%;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom: 50px;
+		
+	}
+	.card p{
+		font-size:px;
+	}
+	.card h2{
+		font-size:12px;
+	}
+	.img-card{
+		height: 3.5em;
+		padding-top: 0.6em;
+	}
+	.container-form{
+		width: 52%;
+	}
+	.menu-oculto{
+		display: flex;
+		left: 164px;
+		transition: letf 0.7s;
+	}
+	.navi{
+		transition:0.5s;
+	}
+	.checkbox:checked ~ .header-index{
+		
+		margin-left: -170px;
+	}
+	.checkbox:checked ~ .content{
+		
+		margin-left: -100px;
+	}
+	.checkbox:checked ~ .content .card{
+		
+		max-width: 60%;
+	}
+	
+	.checkbox:checked ~ .menu-oculto{
+		left: 0%;
+		
+	}
+	.checkbox:checked ~ .navi{
+		display: none;
+	}
 	
 }
